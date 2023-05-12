@@ -82,6 +82,11 @@ ul li a:hover {
 	color: #007bff;
 }
 
+.container {
+	margin: 0 auto;
+	max-width: 64rem;
+}
+
 @media screen and (max-width: 768px) {
 	nav ul {
 		flex-direction: column;
