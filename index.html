@@ -53,22 +53,17 @@
         I am confident that my experience and skills make me a valuable asset to any organization.
       			</p>
 		</section>
-		<section class="container" id="experience">
-			<h3>Experience</h3>
-			<ul>
-				<li>Job Title, Company Name (Date Range)</li>
-				<li>Job Title, Company Name (Date Range)</li>
-				<li>Job Title, Company Name (Date Range)</li>
-			</ul>
-		</section>
-		<section class="container" id="projects">
-			<h3>Projects</h3>
-			<ul>
-				<li><a href="https://github.com/your-github-repository">Project Title</a></li>
-				<li><a href="https://github.com/your-github-repository">Project Title</a></li>
-				<li><a href="https://github.com/your-github-repository">Project Title</a></li>
-			</ul>
+		<section class="container" id="blog">
+			<div id="substack-feed-embed"></div>
 		</section>
 	</main>
+
+	<script>
+		window.SubstackFeedWidget = {
+			substackUrl: "mcreader.substack.com",
+			posts: 3
+		};
+	</script>
+	<script src="https://substackapi.com/embeds/feed.js" async></script>
 </body>
 </html>
