@@ -14,33 +14,20 @@
 		<div class="container">
 			<h1>Dzianis Roi</h1>
 			<h2>Software Engineer</h2>
-			<a href="https://github.com/McReader" target="_blank">
+			<a class="icon-link" href="https://github.com/McReader" target="_blank">
 				<img alt="GitHub logo" src="icons/github.svg" width="40px" height="40px" />
 			</a>
-			<a href="https://www.linkedin.com/in/dzianis-roi/" target="_blank">
+			<a class="icon-link" href="https://www.linkedin.com/in/dzianis-roi/" target="_blank">
 				<img alt="LinkedIn logo" src="icons/linkedin.svg" width="40px" height="40px" />
 			</a>
-			<a href="https://stackoverflow.com/users/3936602/dzianis-roi" target="_blank">
+			<a class="icon-link" href="https://stackoverflow.com/users/3936602/dzianis-roi" target="_blank">
 				<img alt="StackOverflow logo" src="icons/stackoverflow.svg" width="40px" height="40px" />
 			</a>
-			<a href="https://leetcode.com/McReader/" target="_blank">
+			<a class="icon-link" href="https://leetcode.com/McReader/" target="_blank">
 				<img alt="LeetCode logo" src="icons/leetcode.svg" width="40px" height="40px" />
 			</a>
-			<a href="https://mcreader.substack.com/" target="_blank">
-				<img alt="Substack logo" src="icons/substack.svg" width="40px" height="40px" />
-			</a>
-			<address>
-				<img alt="Gmail logo" src="icons/gmail.svg" width="20px" height="20px" />
-				<a href="mailto:mcreader215@gmail.com">mcreader215@gmail.com</a>
-			</address>
 		</div>
 	</header>
-	<nav>
-		<ul class="container">
-			<li><a href="#about">About</a></li>
-			<li><a href="#blog">Blog</a></li>
-		</ul>
-	</nav>
 	<main>
 		<section class="container" id="about">
 			<h3>About Me</h3>
@@ -53,18 +40,50 @@
         I am confident that my experience and skills make me a valuable asset to any organization.
       			</p>
 		</section>
+		
 		<section class="container" id="blog">
 			<h3>Blog</h3>
 			<div id="substack-feed-embed"></div>
+
+			<div class="subscribe-newsletter">
+				<h4>Subscribe to my Newsletter</h4>
+				<div id="custom-substack-embed"></div>
+			</div>
+		</section>
+
+		<section class="container" id="contact">
+			<h3>Contact Me</h3>
+			<address>
+				<img alt="Gmail logo" src="icons/gmail.svg" width="20px" height="20px" />
+				<a href="mailto:mcreader215@gmail.com">mcreader215@gmail.com</a>
+			</address>
 		</section>
 	</main>
 
 	<script>
+		var computedStyles = getComputedStyle(document.documentElement);
+		var backgroundColor = computedStyles.getPropertyValue('--color-background');
+		var primaryFontColor = computedStyles.getPropertyValue('--color-font-primary');
+
 		window.SubstackFeedWidget = {
 			substackUrl: "mcreader.substack.com",
-			posts: 3
+			posts: 3,
+			colors: {
+				primary: primaryFontColor,
+				secondary: "#808080",
+				background: backgroundColor,
+			},
+		};
+
+		window.CustomSubstackWidget = {
+			substackUrl: "mcreader.substack.com",
+			placeholder: "example@gmail.com",
+			buttonText: "Subscribe",
+			theme: "purple",
 		};
 	</script>
+	
 	<script src="https://substackapi.com/embeds/feed.js" async></script>
+	<script src="https://substackapi.com/widget.js" async></script>
 </body>
 </html>
