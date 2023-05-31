@@ -69,6 +69,10 @@ ul {
 	row-gap: var(--offset-l);
 }
 
+.hero .roles {
+	text-align: center;
+}
+
 .hero .sub-title {
 	text-align: center;
 }
