@@ -1,6 +1,10 @@
 :root {
-  --color-background: #333;
-  --color-font-primary: #fff;
+  --color-background: #fff;
+  --color-font-primary: #333;
+
+  --offset-s: 0.5rem;
+  --offset-m: 1rem;
+  --offset-l: 2rem;
 
   --size-font-xxl: 3rem;
   --size-font-xl: 2.5rem;
@@ -42,17 +46,52 @@ a:hover {
 	color: #ccc;
 }
 
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 .container {
 	margin: 0 auto;
 	max-width: 64rem;
 }
 
-.container + .container {
-	margin-top: 3rem;
+.container.full-screen {
+	min-height: 100vh;
+}
+
+.hero {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: var(--offset-l);
+}
+
+.hero .sub-title {
+	text-align: center;
+}
+
+.hero .social-icons {
+	display: flex;
+	column-gap: var(--offset-m);
 }
 
 .icon-link {
 	text-decoration: none;
+}
+
+.about-me {
+	display: none;
+}
+
+.blog {
+	display: none;
+}
+
+.contact-me {
+	display: none;
 }
 
 .substack-feed-widget {
