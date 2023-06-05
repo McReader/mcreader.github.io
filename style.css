@@ -14,6 +14,7 @@
 	--size-font-xl: 2rem;
 	--size-font-l: 1.5rem;
 	--size-font-m: 1.0rem;
+	--size-font-s: 0.75rem;
 }
 
 html {
@@ -104,10 +105,13 @@ ul {
 
 .hero .roles {
 	color: var(--color-neutral);
+	font-size: var(--size-font-s);
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .hero .sub-title {
+	font-size: var(--size-font-l);
 	font-style: italic;
 }
 
