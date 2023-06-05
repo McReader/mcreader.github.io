@@ -7,9 +7,9 @@
   --offset-l: 2rem;
 
   --size-font-xxl: 3rem;
-  --size-font-xl: 2.5rem;
-  --size-font-l: 2rem;
-  --size-font-m: 1.5rem;
+  --size-font-xl: 2rem;
+  --size-font-l: 1.5rem;
+  --size-font-m: 1.0rem;
 }
 
 body {
@@ -67,6 +67,10 @@ ul {
 	flex-direction: column;
 	justify-content: center;
 	row-gap: var(--offset-l);
+}
+
+.hero .roles {
+	text-align: center;
 }
 
 .hero .sub-title {
