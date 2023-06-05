@@ -1,5 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://mcreader.dev/sitemap.xml
-Sitemap: https://www.mcreader.dev/sitemap.xml
