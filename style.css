@@ -1,4 +1,6 @@
 :root {
+	--color-neutral: #666;
+
 	--color-background: #fff;
 	--color-font-primary: #333;
 
@@ -72,6 +74,10 @@ ul {
 	min-height: 100vh;
 }
 
+.sub-title {
+	text-align: center;
+}
+
 .button {
 	align-items: center;
 	border-radius: 0.25rem;
@@ -97,11 +103,12 @@ ul {
 }
 
 .hero .roles {
+	color: var(--color-neutral);
 	text-align: center;
 }
 
 .hero .sub-title {
-	text-align: center;
+	font-style: italic;
 }
 
 .hero .social-icons {
