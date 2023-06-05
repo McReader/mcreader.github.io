@@ -94,7 +94,9 @@ ul {
 
 .hero .social-icons {
 	display: flex;
-	column-gap: var(--offset-m);
+	flex-wrap: wrap;
+	gap: var(--offset-m);
+	justify-content: center;
 }
 
 .icon-link {
