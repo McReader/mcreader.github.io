@@ -142,6 +142,7 @@ ul {
 }
 
 .blog .text-content {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	row-gap: var(--offset-l);
