@@ -10,15 +10,17 @@
 
 	--button-size-l: 3rem;
 
-	--size-font-xxl: 3rem;
-	--size-font-xl: 2rem;
-	--size-font-l: 1.5rem;
-	--size-font-m: 1.0rem;
-	--size-font-s: 0.75rem;
+	--size-font-xxxl: 3.375rem;
+	--size-font-xxl: 2.25rem;
+	--size-font-xl: 1.5rem;
+	--size-font-l: 1.125rem;
+	--size-font-m: 1rem;
+	--size-font-s: 0.825rem;
 }
 
 html {
 	box-sizing: border-box;
+	line-height: 1.5;
 }
 
 *, *:before, *:after {
@@ -32,22 +34,28 @@ body {
 }
 
 h1 {
-	font-size: var(--size-font-xxl);
+	font-size: var(--size-font-xxxl);
 	margin: 0;
 }
 
 h2 {
-	font-size: var(--size-font-xl);
+	font-size: var(--size-font-xxl);
 	margin: 0;
 }
 
 h3 {
+	font-size: var(--size-font-xl);
+	margin: 0;
+}
+
+h4 {
 	font-size: var(--size-font-l);
 	margin: 0;
 }
 
 p {
-	line-height: var(--size-font-m);
+	font-size: var(--size-font-m);
+	letter-spacing: 0.05rem;
 	margin: 0;
 }
 
@@ -110,8 +118,8 @@ ul {
 	text-transform: uppercase;
 }
 
-.hero .sub-title {
-	font-size: var(--size-font-l);
+.hero .tagline {
+	font-size: var(--size-font-xl);
 	font-style: italic;
 }
 
@@ -128,7 +136,14 @@ ul {
 }
 
 .about-me {
-	display: none;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: var(--offset-m);
+}
+
+.about-me .text {
+	max-width: 725px;
 }
 
 .blog {
