@@ -148,6 +148,10 @@ ul {
 	row-gap: var(--offset-l);
 }
 
+.blog .description {
+	text-align: center;
+}
+
 .contact-me {
 	align-items: center;
 	display: flex;
