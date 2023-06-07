@@ -79,12 +79,22 @@ ul {
 	padding: var(--offset-l) var(--offset-m);
 }
 
-.container.full-screen {
-	min-height: 100vh;
+.section {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
-.sub-title {
+.section .title {
+	margin-bottom: var(--offset-m);
+}
+
+.section .title, .section .sub-title {
 	text-align: center;
+}
+
+.section .text-content {
+	max-width: 725px;
 }
 
 .button {
@@ -104,10 +114,6 @@ ul {
 }
 
 .hero {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	row-gap: var(--offset-l);
 }
 
@@ -135,26 +141,16 @@ ul {
 	text-decoration: none;
 }
 
-.about-me {
-	align-items: center;
+.blog .text-content {
 	display: flex;
 	flex-direction: column;
-	gap: var(--offset-m);
-}
-
-.about-me .text {
-	max-width: 725px;
-}
-
-.blog {
-	display: none;
+	row-gap: var(--offset-l);
 }
 
 .contact-me {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	gap: var(--offset-m);
 }
 
@@ -166,14 +162,14 @@ ul {
 	padding: 0;
 }
 
-.subscribe-newsletter {
+.subscribe-newsletter .text-content {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	row-gap: var(--offset-m);
 }
 
-@media screen and (max-width: 768px) {
-	nav ul {
-		flex-direction: column;
-	}
+.subscribe-newsletter .description {
+	color: var(--color-neutral);
+	text-align: center;
 }

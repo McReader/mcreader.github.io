@@ -32,7 +32,7 @@
 	<header>
 	</header>
 	<main>
-		<section class="container hero">
+		<section class="container section hero">
 			<div>
 				<h1 class="sub-title">Dzianis Roi</h1>
 				<p class="roles">Software Engineer | Co-founder</p>
@@ -48,7 +48,7 @@
 					</a>
 				</li>
 				<li>
-					<a aria-label="Go to GitHub profile" class="icon-link" href="https://www.linkedin.com/in/dzianis-roi/" target="_blank">
+					<a aria-label="Go to GitHub profile" class="icon-link" href="https://github.com/McReader" target="_blank">
 						<svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="2.5rem" width="2.5rem">
 							<title>GitHub Profile</title>
 							<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
@@ -82,30 +82,39 @@
 			</ul>
 		</section>
 		
-		<section class="container about-me" id="about">
-			<h3 class="sub-title">About Me</h3>
-			<p class="text">
+		<section class="container section" id="about">
+			<h2 class="title">About Me</h3>
+			<p class="text-content">
 				As a lead software engineer with over 9 years of experience, I have a diverse set of skills and expertise in various programming languages and technologies. 
 				I have a strong background in software development, with a focus on delivering high-quality, scalable, and maintainable solutions. I participated in projects
 				of various scales from startup to enterprise level. I have experience leading development teams, designing systems, and driving the successful delivery of complex software projects. 
 				I am skilled in languages such as JavaScript, and Python, and have experience in Cloud Computing, Frontend Development, and Mobile Development. I am a certified technical interviewer 
 				and have experience in mentoring other software engineers. I am passionate about staying up-to-date with the latest developments in the field and continuously improving my skills. 
-				I am confident that my experience and skills make me a valuable asset to any organization.
+				I am confident that my experience and skills make me a valuable asset to any organization
 			</p>
 		</section>
 		
-		<section class="container full-screen blog" id="blog">
-			<h3>Blog</h3>
-			<div id="substack-feed-embed"></div>
+		<section class="container section blog" id="blog">
+			<h2 class="title">Blog</h3>
+			
+			<div class="text-content">
+				<p>
+					Welcome to my blog, where I share my professional experiences and the thrilling adventures of startup life. Below, you'll find a collection of top articles
+				</p>
+				<div id="substack-feed-embed"></div>
+			</div>
+		</section>
 
-			<div class="subscribe-newsletter">
-				<h4>Subscribe to my Newsletter</h4>
+		<section class="container section subscribe-newsletter">
+			<h3 class="title">Subscribe to my Newsletter</h4>
+			<div class="text-content">
+				<p class="description">If you've found my blog enjoyable and would like to receive timely notifications about new blog posts</p>
 				<div id="custom-substack-embed"></div>
 			</div>
 		</section>
 
-		<section class="container contact-me" id="contact">
-			<h3 class="sub-title">Are You Minding a Project?</h3>
+		<section class="container section" id="contact">
+			<h3 class="title">Are You Minding a Project?</h3>
 			<a class="button outlined" href="mailto:contact@mcreader.dev">Contact Me</a>
 		</section>
 	</main>
@@ -114,13 +123,14 @@
 		var computedStyles = getComputedStyle(document.documentElement);
 		var backgroundColor = computedStyles.getPropertyValue('--color-background');
 		var primaryFontColor = computedStyles.getPropertyValue('--color-font-primary');
+		var neutralColor = computedStyles.getPropertyValue('--color-neutral');
 
 		window.SubstackFeedWidget = {
 			substackUrl: "mcreader.substack.com",
 			posts: 3,
 			colors: {
 				primary: primaryFontColor,
-				secondary: "#808080",
+				secondary: neutralColor,
 				background: backgroundColor,
 			},
 		};
